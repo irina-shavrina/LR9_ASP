@@ -1,0 +1,22 @@
+﻿@model ASP.NET.Views.Main.ProductViewModel
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View</title>
+</head>
+<body>
+
+
+
+
+    @await Component.InvokeAsync("Table", Model.Products)
+    
+    
+    <a href="/AddProduct">Add product</a>
+    <a href="/Map">Погода</a>
+</body>
+</html>
